@@ -1,9 +1,3 @@
-/*!
-YUI 3.18.1 (build f7e7bcb)
-Copyright 2014 Yahoo! Inc. All rights reserved.
-Licensed under the BSD License.
-http://yuilibrary.com/license/
-*/
 html {
     color: #000;
     background: #fff
@@ -187,7 +181,19 @@ a:hover {
     position: relative;
     top: 0;
     z-index: 100;
-    display: none
+    display: none;
+    animation:gradient 2s ease-out;
+    animation-iteration-count: infinite
+}
+
+@keyframes moveDown {
+    from {top:-110%;}
+    to {top:0%;}
+}
+
+@keyframes moveUp {
+    from {top:0%;}
+    to {top:-110%;}
 }
 
 #menu h1 {
@@ -217,11 +223,11 @@ a:hover {
     text-decoration: line-through
 }
 
-.aidnsub #menu {
+.kipssub #menu {
     position: fixed;
     background: #f9f9f9;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 #bt_menu {

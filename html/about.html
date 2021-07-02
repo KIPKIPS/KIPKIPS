@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
+    <title>KIPS | kipkips official website</title>
+    <meta name="theme-color" content="#000000">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&amp;family=Poppins:wght@400&amp;display=swap"> -->
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic|Montserrat&amp;display=swap" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link id="icon" rel="shortcut icon" href="../images/icon.png" />
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.96.0/build/three.min.js" async=""></script>
+    <script src="../js/common.js" defer=""></script>
+    <style>
+        #bt_menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: calc(10px + 3vmin);
+            cursor: pointer;
+            z-index: 101
+        }
+
+        @-webkit-keyframes animMenu {
+            0% {
+                opacity: .2;
+                transform: scale(1)
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1.13)
+            }
+        }
+
+        @keyframes animMenu {
+            0% {
+                opacity: .2;
+                transform: scale(1)
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1.13)
+            }
+        }
+
+        #bt_menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: calc(10px + 3vmin);
+            cursor: pointer;
+            z-index: 101
+        }
+
+        #bt_menu img {
+            width: calc(36px + 5vmin);
+            padding: 1px;
+            -webkit-animation: animMenu .9s ease-in-out infinite alternate;
+            animation: animMenu .9s ease-in-out infinite alternate
+        }
+
+        #menu {
+            margin: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            position: relative;
+            top: 0;
+            z-index: 100;
+            display: none;
+            animation: gradient 2s ease-out;
+            animation-iteration-count: infinite
+        }
+
+        @keyframes moveDown {
+            from {
+                top: -110%;
+            }
+
+            to {
+                top: 0%;
+            }
+        }
+
+        @keyframes moveUp {
+            from {
+                top: 0%;
+            }
+
+            to {
+                top: -110%;
+            }
+        }
+
+        #menu h1 {
+            font-weight: 400;
+            font-size: calc(1.8rem + 3.6vmin);
+            margin-bottom: 1vh;
+            letter-spacing: calc(.4rem + 1vmin)
+        }
+
+        #menu h2 {
+            font-weight: 400;
+            font-size: calc(.7rem + .9vmin);
+            margin-bottom: 6vh;
+            letter-spacing: .22rem
+        }
+
+        #menu p {
+            margin-bottom: 4vh;
+            font-size: calc(.5rem + 3.6vmin)
+        }
+
+        #menu p.spa {
+            margin-top: 6vh
+        }
+
+        #menu p.none {
+            text-decoration: line-through
+        }
+
+        .kipssub #menu {
+            position: fixed;
+            background: #f9f9f9;
+            width: 100%;
+            height: 100%;
+        }
+
+        #bt_menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: calc(10px + 3vmin);
+            cursor: pointer;
+            z-index: 101
+        }
+
+        #bt_menu img {
+            width: calc(36px + 5vmin);
+            padding: 1px;
+            -webkit-animation: animMenu .9s ease-in-out infinite alternate;
+            animation: animMenu .9s ease-in-out infinite alternate
+        }
+    </style>
+</head>
+
+<body id="kips">
+    <div id="bt_menu" onclick=onMenuBtn(document)><img src="../images/menu.svg"></div>
+    <div id="menu" style="display: block;top: -110%;position: absolute;">
+        <h1><a href="index.html">KIPS</a></h1>
+        <h2>kipkips official website</h2>
+        <p><a href="news.html">NEWS</a></p>
+        <p><a href="contents.html">CONTENTS</a></p>
+        <p><a href="sound.html">SOUND</a></p>
+        <p class="none">ABOUT</p>
+        <p class="spa"><a href="https://github.com/KIPKIPS">GITHUB</a></p>
+    </div>
+    <div id="contents" style="display: block;">
+        <div id="about">
+            <div class="title">ABOUT</div>
+            <div class="name">daniwell</div>
+            <div class="profile en">
+                <!-- <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank">Nyan Cat</a> -->
+                Game Development Engineers .
+                <br>Songwriting / Design / Illustration / Modeling / Programming / Movie etc.
+            </div>
+            <ul>
+                <li><a href="/" target="_blank">OFFICIAL WEBSITE</a></li>
+                <li class="sp"><a href="https://twitter.com/daniwell_aidn" target="_self">TWITTER</a></li>
+                <li><a href="https://www.youtube.com/user/daniwellaidn" target="_blank">YOU TUBE</a></li>
+                <li class="ja" style="display: none;"><a href="https://www.nicovideo.jp/mylist/4009728#+sort=8"
+                        target="_blank">NICONICO</a></li>
+                <li class="sp"><a href="https://karent.jp/artist/pp000298" target="_blank">KARENT</a></li>
+                <li class="ja" style="display: none;"><a href="https://www.tunecore.co.jp/artists/daniwell"
+                        target="_blank">TUNECORE</a></li>
+                <li class="en"><a href="https://www.tunecore.co.jp/artists/daniwell?artistPagePath=daniwell&amp;lang=en"
+                        target="_blank">TUNECORE</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="sns">
+        <ul>
+            <li id="bt_tw">
+                <img src="../images/twitter.png">
+            </li>
+            <li id="bt_fb"><img src="../images/facebook.png"></li>
+        </ul>
+    </div>
+    <div id="footer" style="display: block;">
+        <div id="copyright">© AIDN aidn.jp</div>
+    </div>
+    <!-- <div id="loading" style="display: none;">
+        <p></p>
+    </div> -->
+</body>
+
+</html>
